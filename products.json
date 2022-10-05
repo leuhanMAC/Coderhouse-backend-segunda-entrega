@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Test",
+    "descripcion": "Testdesc",
+    "codigo": 123,
+    "foto": "https://a.com/a.jpg",
+    "precio": 123,
+    "stock": 1,
+    "id": "30232b87-9a3a-447c-b6d7-782a498a48b2",
+    "timestamp": 1663248418976
+  },
+  {
+    "nombre": "Test",
+    "descripcion": "Testdesc",
+    "codigo": 123,
+    "foto": "https://a.com/a.jpg",
+    "precio": 123,
+    "stock": 1,
+    "id": "c564ccfe-0811-4006-8213-e06c75c64e05",
+    "timestamp": 1663248463268
+  }
+]
