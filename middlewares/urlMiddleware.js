@@ -1,4 +1,4 @@
-const urlMiddleware = (req, res, next) => {
+export const urlMiddleware = (req, res, next) => {
     const patternURL = /(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png|jpeg|webp)/;
     const { thumbnail } = req.body;
     if (!thumbnail) {
@@ -14,4 +14,3 @@ const urlMiddleware = (req, res, next) => {
 
     next();
 };
-module.exports = urlMiddleware;

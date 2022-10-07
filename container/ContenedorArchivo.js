@@ -1,6 +1,7 @@
-const fs = require('fs');
-const crypto = require('node:crypto');
-class Container {
+import fs from 'fs';
+import crypto from 'node:crypto';
+
+class FileContainer {
     constructor(fileName) {
         this.fileName = fileName;
         this.createIfNotExist();
@@ -125,4 +126,4 @@ class Container {
     }
 }
 
-module.exports = Container;
+export default FileContainer;

@@ -1,5 +1,7 @@
-const authMiddleware = (req, res, next) => {
-    require('dotenv').config();
+import dotenv from 'dotenv';
+
+export const authMiddleware = (req, res, next) => {
+    dotenv.config();
 
     if (!req.headers.authorization || req.headers.authorization.indexOf('Basic ') === -1) {
         return res.status(401).json({ mensaje: 'Falta el header de autorización' });
@@ -13,5 +15,3 @@ const authMiddleware = (req, res, next) => {
 
     next();
 };
-
-module.exports = authMiddleware;

@@ -1,4 +1,4 @@
-const postProductMiddleware = (req, res, next) => {
+export const postProductMiddleware = (req, res, next) => {
     const { nombre, descripcion, codigo, foto, precio, stock } = req.body;
 
     if (!nombre || !descripcion || !codigo || !foto || !precio || !stock) {
@@ -12,5 +12,4 @@ const postProductMiddleware = (req, res, next) => {
     next();
 };
 
-module.exports = postProductMiddleware;
 

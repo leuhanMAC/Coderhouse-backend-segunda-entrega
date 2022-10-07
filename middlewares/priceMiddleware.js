@@ -1,4 +1,4 @@
-const priceMiddleware = (req, res, next) => {
+export const priceMiddleware = (req, res, next) => {
     const patternPrice = /^(?=.*[1-9])[0-9]*[.]?[0-9]{1,2}$/;
     if (req.body.price) {
         req.body.price = Number(req.body.price);
@@ -18,4 +18,3 @@ const priceMiddleware = (req, res, next) => {
     next();
 };
 
-module.exports = priceMiddleware;

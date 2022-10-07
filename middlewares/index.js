@@ -1,13 +1,5 @@
-const urlMiddleware = require('./urlMiddleware');
-const authMiddleware = require('./authMiddleware');
-const postProductMiddleware = require('./postProductMiddleware');
-const priceMiddleware = require('./priceMiddleware');
-const putProductMiddleware = require('./putProductMiddleware');
-
-module.exports = {
-    urlMiddleware,
-    authMiddleware,
-    postProductMiddleware,
-    priceMiddleware,
-    putProductMiddleware
-}
+export { authMiddleware } from "./authMiddleware";
+export { postProductMiddleware } from "./postProductMiddleware";
+export { priceMiddleware } from "./priceMiddleware";
+export { putProductMiddleware } from "./putProductMiddleware";
+export { urlMiddleware } from "./urlMiddleware";

@@ -1,4 +1,4 @@
-const putProductMiddleware = (req, res, next) => {
+export const putProductMiddleware = (req, res, next) => {
     const { nombre, descripcion, codigo, foto, precio, stock } = req.body;
 
     if (!nombre && !descripcion && !codigo && !foto && !precio && !stock) {
@@ -11,5 +11,3 @@ const putProductMiddleware = (req, res, next) => {
 
     next();
 }
-
-module.exports = putProductMiddleware;

@@ -1,12 +1,16 @@
-const express = require("express");
+import express from "express";
 
-require('dotenv').config();
+import dotenv from 'dotenv'
+import { authMiddleware } from "./middlewares/authMiddleware.js";
+import { postProductMiddleware } from "./middlewares/postProductMiddleware.js";
+import { priceMiddleware } from "./middlewares/priceMiddleware.js";
+import { putProductMiddleware } from "./middlewares/putProductMiddleware.js";
+import { urlMiddleware } from "./middlewares/urlMiddleware.js";
 
-const { authMiddleware, postProductMiddleware, priceMiddleware, urlMiddleware, putProductMiddleware } = require('./middlewares');
-const Container = require("./container");
+dotenv.config();
 
-const productFiles = new Container("products.json");
-const cartFiles = new Container("carts.json");
+
+import { productosDao as productFiles, carritosDao as cartFiles } from './daos/index.js';
 
 
 const PORT = process.env.PORT || 8080;

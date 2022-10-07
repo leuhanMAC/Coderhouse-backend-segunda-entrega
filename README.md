@@ -1,5 +1,3 @@
-# [Sitio del proyecto](https://coderhouse-14.nclotet.com.ar/)
-
 ## [API Productos]
 
 ### GET /api/productos
